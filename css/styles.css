@@ -1,7 +1,10 @@
 body {
+    display: flex;
+    flex-direction: column;
     background-color: #ffffff;
     margin: 0px;
     padding: 0px;
+    height: 100%;
 }
 
 .header {
@@ -60,13 +63,14 @@ body {
     text-align: center;
 }
 
-.work__wrapper {
+.content {
     width: 100%;
     display: flex;
     margin-top: 100px;
+    flex-grow: 1;
 }
 
-.work__content {
+.items__wrapper {
     width: 80%;
     margin: 0 auto;
     display: flex;
@@ -88,17 +92,23 @@ body {
 
 .footer {
     display: flex;
+    flex-direction: row;
     align-items: center;
     height: 284px;
     background-color: #141414;
 }
 
-.content1__wrapper {
-    margin-left: 100px;
+.info {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 
+.company-info {
 
-.content1__wrapper h2 {
+}
+
+.name-company {
     display: block;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
@@ -108,8 +118,8 @@ body {
     color: #ffffff;
 }
 
-.content1__wrapper span {
-    display: block;
+.company-warning {
+    display: inline-block;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 15px;
     line-height: 24px;
@@ -118,7 +128,8 @@ body {
     color: #bcbcbc;
 }
 
-.contacts {
+.company-contact {
+    display: inline-block;
     margin-left: 300px;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 15px;
@@ -126,5 +137,16 @@ body {
     font-weight: 400;
     letter-spacing: 0.005em;
     color: #bcbcbc;
+}
+
+ul {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: 0.005em;
+    color: #bcbcbc;
+    display: inline-block;
+    list-style: none;  
 }
 
